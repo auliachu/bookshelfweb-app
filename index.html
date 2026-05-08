@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myBookShelf</title>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo-container">
+            <i class="fa-solid fa-book-open-reader logo-icon"></i>
+            <h1 class="logo-text">myBookShelf</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" id="nav-home" class="active">Home</a></li>
+                <li><a href="#" id="nav-favorite">Favorite</a></li>
+                <li><a href="#" id="nav-profile">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Home View: Daftar Buku -->
+        <section id="home-view" class="view-section active">
+            <div class="container">
+                <h2 class="section-title">Current Collection</h2>
+                <div class="card-grid" id="book-container">
+                    <!-- Card view akan digenerate oleh JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Review View: Detail Buku -->
+        <section id="review-view" class="view-section">
+            <div class="container review-container" id="review-content">
+                <!-- Konten review akan diisi oleh JavaScript -->
+            </div>
+        </section>
+
+        <!--Profile View: Halaman Profile-->
+        <section id="profile-view" class="view-section">
+            <div class="container">
+                <div class="profile-card">
+                    <img src="assets/images/profile.jpeg" alt="Foto Profil" class="profile-avatar">
+                    <h2 class="profile-name">
+                        Aulia Salsabila
+                    </h2>
+                    <p class="profile-role">Mobile App Development, AI Engineer</p>
+                    <p class="profile-location"><i class="fa-solid fa-location-dot"></i> Jambi, Indonesia</p>
+                    <div class="profile-bio">
+                        <p>Someone who loves read some books and also like coding as well</p>
+                    </div>
+                    <div class="profile-stats">
+                        <div class="stat-box">
+                            <h3 id="stat-read">0</h3>
+                            <p>Read</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3 id="stat-reviewed">0</h3>
+                            <p>Reviewed</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3 id="stat-favorite">0</h3>
+                            <p>Favorite Book</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo-container footer-logo">
+                    <i class="fa-solid fa-book-open-reader logo-icon"></i>
+                    <h2 class="logo-text">myBookShelf</h2>
+                </div>
+                <p class="footer-desc">Collection of books and digital literacy trail notes</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Link</h3>
+                <ul>
+                    <li><a href="" onclick="document.getElementById('nav-home').click()">Home</a></li>
+                    <li><a href="#" onclick="document.getElementById('nav-favorite').click()">Favorite</a></li>
+                    <li><a href="#" onclick="document.getElementById('nav-profile').click()">Profile</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow me</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/jellywops/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/auliasalsabila11/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/auliachu"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 myBookShelf. Made by <i class="fa-solid fa-heart" style="color: var(--primary-color);"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
